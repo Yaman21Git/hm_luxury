@@ -1,0 +1,295 @@
+.D {
+	background: black;
+	width :100%;
+	height : 700px;
+	color: white;
+	text-align: center;
+}
+
+.About {
+	width :100%;
+	height : 400px;
+	/*color: white;*/
+	text-align: center;
+}
+
+.Summer {
+	width :100%;
+	height : 600px;
+	/*color: white;*/
+	text-align: center;
+}
+
+.last {
+	width :100%;
+	height : 500px;
+	/*color: white;*/
+	text-align: center;
+}
+
+.footer {
+	width :100%;
+	height : 200px;
+	background: black;
+	color: white;
+	text-align: center;
+}
+
+.container{
+	width: 50%;
+}
+
+.img1 {
+	width: 100%;
+	height :600px;
+	padding-bottom :30px;
+}
+
+.ml6 {
+  position: relative;
+  font-weight: 900;
+  font-size: 3.3em;
+}
+
+.ml6 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml6 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.ml2 {
+  font-weight: 900;
+  font-size: 3.5em;
+}
+
+.ml2 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.ml12 {
+  letter-spacing: 0.5em;
+}
+
+.ml12 .letter {
+  display: inline-block;
+}
+
+.ml9 {
+  position: relative;
+  font-weight: 100;
+  font-size: 1em;
+}
+
+.ml9 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml9 .letter {
+  transform-origin: 50% 100%;
+  display: inline-block;
+}
+
+.wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 600px; 
+    border: 1px solid white;
+}
+
+#slide {
+    position: absolute;
+    left: -200px;
+    width: 100%;
+    height: 600px;
+    background: white;
+    transition: 1s;
+}
+
+.wrapper:hover #slide {
+    transition: 0.5s;
+    left: 0;
+}
+
+.wrapper2 {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 600px; 
+    border: 1px solid white;
+}
+
+#slide2 {
+    position: absolute;
+    right: -200px;
+    width: 100%;
+    height: 600px;
+    background: white;
+    transition: 1s;
+}
+
+.wrapper2:hover #slide2 {
+    transition: 0.5s;
+    right: 0;
+}
+
+@-webkit-keyframes spin {
+	from { -webkit-transform: rotateY(0); }
+	to { -webkit-transform: rotateY(360deg); }
+}
+
+.pyramid-gyro {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  margin-left: -100px;
+	-webkit-perspective: 1000px;
+	-webkit-perspective-origin: 50% 100px;
+}
+.pyramid-axis {
+	position: relative;
+	width: 200px;
+	-webkit-transform-style: preserve-3d;
+  -webkit-animation: spin 16s infinite linear;
+}
+
+.pyramid-wall {
+	position: absolute;
+  border: 100px solid transparent;
+}
+
+.front {
+  bottom: -20px;
+  border-bottom: 200px solid rgba(238,194,111,0.5);
+	-webkit-transform: translateZ(25px) rotateX(30deg);
+}
+.back {
+  bottom: -20px;
+  border-bottom: 200px solid rgba(238,194,111,0.5);
+	-webkit-transform: translateZ(-25px) rotateY(180deg) rotateX(30deg);
+}
+.left {
+  bottom: -20px;
+  left: 75px;
+  border-bottom: 200px solid rgba(218,174,91,0.5);
+	-webkit-transform: rotateY(270deg) translateX(-100px) rotateX(30deg);
+	-webkit-transform-origin: center left;
+}
+.right {
+  bottom: -40px;
+  right: 150px;
+  border-bottom: 200px solid rgba(218,174,91,0.5);
+  -webkit-transform: rotateY(-270deg) translateX(100px) rotateX(30deg);
+	-webkit-transform-origin: top right;
+}
+.bottom {
+  width: 200px;
+  height: 200px;
+  background: #eec26f;
+  -webkit-transform: rotateX(90deg) translateY(100px);
+	-webkit-transform-origin: bottom center;
+}
+.shadow {
+  position: absolute;
+  top: 250px;
+  width: 0;
+  height: 0;
+  box-shadow: 0 0 50px 100px rgba(0,0,0,0.5);
+  -webkit-transform: rotateX(90deg) translateX(100px);
+}
+
+.fyi {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 250px;
+  color: #fff;
+}
+
+.ml14 {
+  font-weight: 200;
+  font-size: 3.2em;
+}
+
+.ml14 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml14 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  transform-origin: 100% 100%;
+  bottom: 0;
+}
+
+.ml14 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 350px;
+  height: 500px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
